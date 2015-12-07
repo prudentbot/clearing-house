@@ -1,0 +1,8 @@
+
+<template name="user">
+  <h1>{{username}}'s user page</h1>
+  <h3> Articles: </h3>
+  {{#each userArticles}}
+    <a href="/{{username}}/{{url}}">{{title}}</a>
+  {{/each}}
+</template>
